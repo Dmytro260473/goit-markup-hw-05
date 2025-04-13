@@ -540,7 +540,7 @@ h2 {
   margin-left: 16px;
 }
 
-.modal-overlay {
+.backdrop {
   position: fixed;
   left: 0;
   top: 0;
