@@ -1,18 +1,35 @@
 (() => {
   const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
     openModalBtn: document.querySelector("[data-modal-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector("[data-modal]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle("is-open");
+  // Проверка, что все элементы найдены
+  if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) {
+    console.error("Modal elements not found. Check data attributes.");
+    return;
   }
+
+  refs.openModalBtn.addEventListener("click", () => {
+    refs.modal.classList.add("is-open");
+  });
+
+  refs.closeModalBtn.addEventListener("click", () => {
+    refs.modal.classList.remove("is-open");
+  });
+
+  // Закрытие при клике на фон
+  refs.modal.addEventListener("click", (e) => {
+    if (e.target === refs.modal) {
+      refs.modal.classList.remove("is-open");
+    }
+  });
+
+  // Закрытие по клавише Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && refs.modal.classList.contains("is-open")) {
+      refs.modal.classList.remove("is-open");
+    }
+  });
 })();
