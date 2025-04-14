@@ -479,7 +479,7 @@ h2 {
 
 /* modal */
 
-.modal-overlay {
+.backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -495,7 +495,7 @@ h2 {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
