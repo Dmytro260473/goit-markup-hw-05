@@ -354,6 +354,8 @@ h2 {
   background-color: #404bbf;
 }
 
+/* portfolio */
+
 .studio-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -406,6 +408,8 @@ h2 {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* footer */
 
 .page-footer {
   background-color: rgb(46, 47, 66);
@@ -473,72 +477,7 @@ h2 {
   background-color: #31d0aa;
 }
 
-.footer-form-field {
-  margin-left: auto;
-}
-
-.footer-form-title {
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
-
-.footer-input {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border: 1px solid #fff;
-  border-radius: 4px;
-  background-color: transparent;
-  height: 40px;
-  width: 264px;
-  padding: 8px 16px;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-input:focus {
-  border-color: #31d0aa;
-}
-
-.footer-input::placeholder {
-  color: #ffffff;
-}
-
-.footer-btn {
-  border-radius: 4px;
-  border: none;
-  background-color: #4d5ae5;
-  min-width: 165px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  padding: 8px 24px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-btn:hover,
-.footer-btn:focus {
-  background-color: #31d0aa;
-}
-
-.footer-btn-icon {
-  fill: #fff;
-  margin-left: 16px;
-}
+/* modal */
 
 .modal-overlay {
   position: fixed;
@@ -607,7 +546,7 @@ h2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .close-icon,
+\.modal-close-btn:hover .close-icon,
 .modal-close-btn:focus .close-icon {
   fill: #ffffff;
 }
