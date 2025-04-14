@@ -9,11 +9,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.page-container {
+/*.page-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+}*/
 
 main {
   flex-grow: 1;
